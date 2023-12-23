@@ -26,7 +26,6 @@ public class InstructionParser
         {
             e.printStackTrace();
         }
-
         return instructions;
     }
 
@@ -47,7 +46,6 @@ public class InstructionParser
         int minX = Integer.MAX_VALUE;
         int minY = Integer.MAX_VALUE;
 
-        // Find the minimum x and y coordinates
         for (Point point : originalMap)
         {
             minX = Math.min(minX, point.x);
@@ -62,9 +60,7 @@ public class InstructionParser
             int adjustedY = point.y - minY;
             adjustedMap.add(new Point(adjustedX, adjustedY));
         }
-
         return adjustedMap;
     }
-
 }
 

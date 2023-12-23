@@ -20,8 +20,7 @@ public class DigPlan
         List<Point> trenchPlusInteriorXYs = digOutTheInterior(trenchXYs, trench);
         //Print the trench with interior
         printTrenchMap(trenchPlusInteriorXYs);
-        System.out.println("Part 1 answer - # of trench plus interior squares: " + trenchPlusInteriorXYs.size());
-
+        System.out.println("# of trench plus interior squares: " + trenchPlusInteriorXYs.size());
     }
 
     public static List<Point> digOutTheTrench(final List<Instruction> instructions)
@@ -137,7 +136,6 @@ public class DigPlan
             }
             System.out.println();
         }
-
         return trenchPlusInteriorXYs;
     }
 
@@ -158,7 +156,6 @@ public class DigPlan
         {
             trenchMap[point.x][point.y] = '#';
         }
-
         // Print the trench map
         for (int i = 0; i <= maxX; i++)
         {

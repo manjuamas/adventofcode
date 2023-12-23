@@ -15,7 +15,7 @@ public class DigPlan
         List<Point> trenchXYs = digOutTheTrench(instructions);
         trenchXYs=adjustMap(trenchXYs);
         System.out.println("# of trench squares: " + trenchXYs.size());
-        //Print thr trench
+        //Print the trench
         char[][] trench = printTrenchMap(trenchXYs);
         List<Point> trenchPlusInteriorXYs = digOutTheInterior(trenchXYs, trench);
         //Print the trench with interior

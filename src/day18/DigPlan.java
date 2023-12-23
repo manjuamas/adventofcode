@@ -134,7 +134,6 @@ public class DigPlan
                 upBoundFound = false;
                 downBoundFound = false;
             }
-            System.out.println();
         }
         return trenchPlusInteriorXYs;
     }
@@ -165,7 +164,6 @@ public class DigPlan
             }
             System.out.println();
         }
-
         return trenchMap;
     }
 
